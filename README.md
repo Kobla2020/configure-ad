@@ -93,3 +93,19 @@ This picture illustrates that I can now sign in to both DC-1 and Client-1 as my 
 </p>
 <p>
 Next is setting up remote desktop for non-administrative users in Client-1. Sign in to Client-1 as the domain admin(it may take a little while). After signing in, right click the windows icon and click on "System" again. Now under "Related settings" click on "Remote Desktop" which should be the third option down. After clicking on remote desktop, click on "Select users that can remotely access this PC" which will be at the bottom under "User Accounts". This should open a mini window. Click on "Add" and type "Domain Users" in the box and click "OK".
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/IFqxAOL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+This is the last step as well as an exercise. After setting up remote desktop for non-administrative users in Client-1, I went back in to DC-1 and opened Powershell_ise as an administrator. To do this, type powershell_ise in the desktop search bar and right click the powershell_ise app. I then ran a script where 10000 random users were made, then I reopened active directory users and computers and clicked on "Employees" and now inside of the employees organizational unit, are those 10000 users. After observing the users being made I right clicked on one of the users and clicked on properties and went to the "account" tab and entered in the log in information of the user I chose which was: "beve.bawi".
+</p>
+<br />
+
+<p>
+<img src="https://i.imgur.com/wOXvySW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+After joining my user to my domain I logged out of Client-1 and logged back in as one of the 10000 random users.
