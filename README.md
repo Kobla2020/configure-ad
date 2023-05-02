@@ -73,7 +73,7 @@ After clicking on the flag icon, we need to make a domain. You can type in any n
 <br />
 
 <p>
-<img src="https://i.imgur.com/DCF6E8k.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/88PFrL6.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 The next step is connecting our Domain to Client-1. If you are not logged in already, log into your Client-1 VM. Once you are logged in, right click your windows icon on your windows desktop and click on the option where it says "System". Now a new window should have popped up and on the right hand side, it should have some options that are considered to be "related settings", click on the last one that says "Rename this PC(Advanced)". After clicking on rename this PC, a new, smaller window should pop up with some tabs on the top. the first tab reads "Computer Name" and has two option you can click on: "Network ID" and "Change". Click on the option that says "Change" and after doing this, at the bottom of the new window, it says "Member of" and gives you two more options, click on domain and type in your domain name that you made. So after typing in your domain name, and pressing "OK" you should recieve an error that basically says your Client-1 VM is not connected to that domain. In order to connect your domain to your Client-1 VM, we need to go back in to the azure portal. Next click on your Client-1 VM and Now we just pretty much follow the same steps we used to change our DC-1 VM Private IP to static except for a few changes. In the list of options, click on "networking" then click on your network interface which should be: "client-1849" or some other random numbers. After clicking on your network interface, instead of clicking on to IP configurations, we are going to click on "DNS servers" and where it says "DNS servers" and right below that it gives you two options: "inhereit from virtual network" or "Custom". click on custom and type in DC-1s private IP address and then click save at the top. In order to fully register these changes, we need to restart our Client-1 VM. So in the azure portal, go back to your Client-1 VM, click on it and at the top, it will give you the option to restart your Client-1 VM. After your VM is restarted, relog back in to Client-1 and follow the same steps from earlier, you should be able to connect your domain to your Client-1 VM.
@@ -81,7 +81,7 @@ The next step is connecting our Domain to Client-1. If you are not logged in alr
 <br />
 
 <p>
-<img src="https://i.imgur.com/8nbg3dj.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/v4wG4ZX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 This picture illustrates that I can now sign in to both DC-1 and Client-1 as my user, the domain admin.
@@ -89,7 +89,7 @@ This picture illustrates that I can now sign in to both DC-1 and Client-1 as my 
 <br />
 
 <p>
-<img src="https://i.imgur.com/ktLlmMW.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/JIIFwib.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 Next is setting up remote desktop for non-administrative users in Client-1. Sign in to Client-1 as the domain admin(it may take a little while). After signing in, right click the windows icon and click on "System" again. Now under "Related settings" click on "Remote Desktop" which should be the third option down. After clicking on remote desktop, click on "Select users that can remotely access this PC" which will be at the bottom under "User Accounts". This should open a mini window. Click on "Add" and type "Domain Users" in the box and click "OK".
@@ -97,7 +97,7 @@ Next is setting up remote desktop for non-administrative users in Client-1. Sign
 <br />
 
 <p>
-<img src="https://i.imgur.com/IFqxAOL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+<img src="https://i.imgur.com/FZ7W2RB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
 This is the last step as well as an exercise. After setting up remote desktop for non-administrative users in Client-1, I went back in to DC-1 and opened Powershell_ise as an administrator. To do this, type powershell_ise in the desktop search bar and right click the powershell_ise app. I then ran a script where 10000 random users were made, then I reopened active directory users and computers and clicked on "Employees" and now inside of the employees organizational unit, are those 10000 users. After observing the users being made I right clicked on one of the users and clicked on properties and went to the "account" tab and entered in the log in information of the user I chose which was: "beve.bawi".
