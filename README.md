@@ -47,8 +47,8 @@ Next you need to test the connection between DC-1 and Client-1. So after setting
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/0lxPMDL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Screenshot 2023-03-19 011333](https://github.com/Kobla2020/configure-ad/assets/127445078/1fb9fe5b-f8e3-45ef-b4f8-d361f6ce3168)
+
 </p>
 <p>
 Now we're going to install active Directory on DC-1. If its not open already, open DC-1 and go into the server manager. The server manager should automatically pop up when you open DC-1 but just in case it doesnt, type "Server Manager" in the Windows search bar at the bottom of the desktop. After opening server manager, click on the option that says "add roles and features". After clicking on add roles and features, keep clicking next until you get to the page where there are multiple options that you can click to fill in the box. Click on the option that says "Active Directory and Domain Services" then after clicking next, it should take you to a page where it just confirms whether or not to add the feature, on that page click "add feature". After adding active directory and domain services, click next until you can not click next anymore and when that happens, it should just give you the option to install. After installing active directory and domain services, in the upper right hand corner next to "manage" there should be a flag and right next to that flag is a triangle with an exclamation point in the middle, click on that and we'll continue on to making our domain.
