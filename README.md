@@ -55,8 +55,7 @@ Now we're going to install active Directory on DC-1. If its not open already, op
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/REPXIcU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Screenshot 2023-03-19 014121](https://github.com/Kobla2020/configure-ad/assets/127445078/87b90925-6266-42ed-942a-341b4167aa1d)
 </p>
 <p>
 After clicking on the flag icon, we need to make a domain. You can type in any name, just make sure it ends with ".com". For this example, I used "activedirectory.com". After deciding on the name, click next and enter any password into the bar. Now we can just click next until it gives us the option to install and upon installing, it should restart our DC-1 VM and now we should be able to use our domain to log into DC-1 as seen in the picture.
