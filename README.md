@@ -83,8 +83,7 @@ This picture illustrates that I can now sign in to both DC-1 and Client-1 as my 
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/JIIFwib.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Screenshot 2023-03-19 033156](https://github.com/Kobla2020/configure-ad/assets/127445078/8e2974ec-b3b7-414c-bb2f-75d765492bf9)
 </p>
 <p>
 Next is setting up remote desktop for non-administrative users in Client-1. Sign in to Client-1 as the domain admin(it may take a little while). After signing in, right click the windows icon and click on "System" again. Now under "Related settings" click on "Remote Desktop" which should be the third option down. After clicking on remote desktop, click on "Select users that can remotely access this PC" which will be at the bottom under "User Accounts". This should open a mini window. Click on "Add" and type "Domain Users" in the box and click "OK".
