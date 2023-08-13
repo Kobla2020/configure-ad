@@ -76,8 +76,7 @@ The next step is connecting our Domain to Client-1. If you are not logged in alr
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/v4wG4ZX.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Screenshot 2023-03-19 032529](https://github.com/Kobla2020/configure-ad/assets/127445078/242cbdc5-b2a1-4d25-a7a2-3465adbb5754)
 </p>
 <p>
 This picture illustrates that I can now sign in to both DC-1 and Client-1 as my user, the domain admin.
