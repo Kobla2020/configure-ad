@@ -90,8 +90,7 @@ Next is setting up remote desktop for non-administrative users in Client-1. Sign
 </p>
 <br />
 
-<p>
-<img src="https://i.imgur.com/FZ7W2RB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+![Screenshot 2023-03-19 035134](https://github.com/Kobla2020/configure-ad/assets/127445078/9953991a-b508-460a-a3f2-8d9a1543d869)
 </p>
 <p>
 This is the last step as well as an exercise. After setting up remote desktop for non-administrative users in Client-1, I went back in to DC-1 and opened Powershell_ise as an administrator. To do this, type powershell_ise in the desktop search bar and right click the powershell_ise app. I then ran a script where 10000 random users were made, then I reopened active directory users and computers and clicked on "Employees" and now inside of the employees organizational unit, are those 10000 users. After observing the users being made I right clicked on one of the users and clicked on properties and went to the "account" tab and entered in the log in information of the user I chose which was: "beve.bawi".
